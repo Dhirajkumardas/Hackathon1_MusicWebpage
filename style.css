@@ -1,0 +1,212 @@
+/* Color Codings */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --black00: rgb(29, 29, 29);
+  --black50 : rgb(54, 54, 54);
+  --red600: #dc0000;
+  --body: #f9f6ff;
+  --max-width: 1200px;
+}
+* {   /*margin padding */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {   /* HTML and body part styling*/
+  line-height: 1.4;
+  font-family:Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+section {  /*All Sections styling*/
+  scroll-margin: 50px;
+}
+
+ul {  /* Nav bar list */
+  list-style: none;  
+}
+
+a {   /*All anchor tags*/
+  text-decoration: none;
+  color: white;
+}
+.container {  /*all Container styling*/
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header { /*Header Part Start*/
+  background-color: rgb(29, 29, 29);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+nav { /*Header navbar*/
+  display: flex;
+  justify-content: space-between;
+  align-items:self-end; 
+  color: white;
+  padding: 5px 0; 
+
+}
+.navcontent{ /*Header navbar Contents*/
+  margin-left: 15px;
+  width: 480px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+
+.logo { /*Header navbar LOGO*/
+  font-size: 32px;
+  font-weight: 600;
+}
+
+nav ul li {
+  border-bottom: 2px solid transparent;
+  transition: 0.2s ease-in;
+}
+nav ul li:hover {
+  border-bottom: 2px solid white;
+  transition: 0.2s ease-in;
+}
+/* Header Part End*/
+
+
+button {   /*All Buttons Properties*/
+  padding: 10px 15px;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+button:hover {  /*All buttons hover effectr*/
+  transition: 0.2s ease-in-out;
+  opacity: 0.8;
+}
+
+
+.hero-section {  
+  /* background-image: url(https://wallpaperaccess.com/full/2781184.jpg); */
+  background-image: url(./Sonu\ Nigam\ Wallpapers2.jpg);
+  height: 100vh;
+  display: grid;
+  color: white;
+  place-items: center;
+  text-align: center;
+}
+
+.hero-section .container {   /*1st Section Start*/
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.hero-section h1 {
+  font-size: 96px;
+}
+.hero-section h3 {
+  font-size: 32px;
+}        /*1st Section End*/
+
+
+
+.music-section {     /*Music Section Start*/
+  padding-top: 50px;
+  background: var(--black00);
+}
+.music-section .container {  /*Music Section Content part Styling*/
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.ipad-iphone-img {  /*Music Section ipad image*/
+  margin-top: -400px;
+  position: relative;
+  top: 400px;
+}
+.primary-btn {  /*Button*/
+  background-color: var(--red600);
+  color: white;
+}
+.secondary-btn { /*Button*/
+  background-color: var(--black00);
+  color: white;
+}
+
+.about-music {
+  padding-top: 500px;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.video-section {  /*Video Section Start*/
+  background-image: url(https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29uY2VydHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);
+  min-height: 800px;
+  display: grid;
+  place-items: center;
+  color: white;
+  text-align: center;
+}
+.video-section .container {  
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: -200px;
+}
+.hero-section, .video-section {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gift-section {  /*Gift Section Start*/
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+  gap: 50px;
+}
+
+.gift-content { /*Gift Section Contents*/
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.gift-section {
+  scroll-margin: 120px;
+}
+
+.footer-upper {
+  background-color: var(--black00);
+  padding: 20px;
+}
+.footer-upper .container {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+
+.footer-upper h4 {  /*footer Section Start*/
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+.footer-lower {
+  background-color: var(--black50);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+ /*footer Section End*/
